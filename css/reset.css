@@ -44,6 +44,14 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul,ol {
+  list-style: none;
+}
+
 /* Facilitar o trabalho com imagens */
 img,
 picture {
