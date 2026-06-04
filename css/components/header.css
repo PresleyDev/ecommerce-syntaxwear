@@ -104,11 +104,7 @@
         text-align: center;
     }
 
-    .nav-center li,
-    .nav-right li {
-        width: 100%;
-        text-align: center;
-    }
+
 
     .nav-center ul,
     .nav-right ul {
@@ -117,10 +113,6 @@
         width: 100%;
     }
 
-    .nav-center ul li,
-    .nav-right ul li {
-        width: 100%;
-    }
 
 
     .nav-center a,
