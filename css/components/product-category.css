@@ -51,3 +51,9 @@
     background-size: cover;
 }
 
+@media (max-width: 500px) {
+    .categories-card {
+        width: 100%;
+    }
+}
+

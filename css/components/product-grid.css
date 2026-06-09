@@ -4,7 +4,7 @@
     background-position: center;
     position: relative;
     border-radius: 20px;
-    
+
 }
 
 .highlight {
@@ -12,29 +12,29 @@
     background-image: url(../../images/products/card-imagem.jpg);
 }
 
-.sneaker-purple{
+.sneaker-purple {
     grid-area: sneaker-purple;
     background-image: url(../../images/products/roxo-verde-grid.jpg);
 }
 
-.model{
+.model {
     grid-area: model;
     background-image: url(../../images/products/modelo-grid.jpg);
 
 }
 
-.sneaker-color{
+.sneaker-color {
     grid-area: sneaker-color;
     background-image: url(../../images/products/futurista-grid.jpg);
 
 }
 
-.sneaker-white{
+.sneaker-white {
     grid-area: sneaker-white;
     background-image: url(../../images/products/preto-azul-grid.jpg);
 }
 
-.sneaker-silver{
+.sneaker-silver {
     grid-area: sneaker-silver;
     background-image: url(../../images/products/moderno-grid.jpg);
 }
@@ -44,9 +44,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
     grid-template-areas:
-         "highlight highlight sneaker-purple sneaker-purple"
-         "highlight highlight model sneaker-color"
-         "sneaker-white sneaker-white model sneaker-silver";
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
     gap: 30px;
 }
 
@@ -76,4 +76,37 @@
 .cta-group {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "sneaker-color sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white {
+        min-height: 190px;
+    }
+
+
+    .sneaker-white,
+    .sneaker-purple {
+        min-height: 190px;
+    }
 }
